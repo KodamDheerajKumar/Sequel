@@ -20,7 +20,6 @@ const addProduct = async (req, res) => {
 }
 
 
-
 // 2. get all products
 
 const getAllProducts = async (req, res) => {
@@ -49,8 +48,6 @@ const updateProduct = async (req, res) => {
     let product = await Product.update(req.body, { where: { id: id }})
 
     res.status(200).send(product)
-   
-
    
 }
 
